@@ -16,7 +16,7 @@ public class Baseclass3 {
 	public void setup(){
 		
 		WebDriverManager.chromedriver().setup();
-		WebDriver driver=new ChromeDriver();
+	    driver=new ChromeDriver();
 		driver.get("https://redbus.in/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

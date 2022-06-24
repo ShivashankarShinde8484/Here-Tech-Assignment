@@ -15,7 +15,7 @@ public class Baseclass {
 	public void setup(){
 		
 		WebDriverManager.chromedriver().setup();
-		WebDriver driver=new ChromeDriver();
+	    driver=new ChromeDriver();
 		driver.get("https://www.google.com/maps/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

@@ -15,7 +15,7 @@ public class Baseclass1 {
 	public void setup(){
 		
 		WebDriverManager.chromedriver().setup();
-		WebDriver driver=new ChromeDriver();
+	    driver=new ChromeDriver();
 		driver.get("http://www.allmovie.com/ ");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

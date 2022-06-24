@@ -21,18 +21,18 @@ public void setup(String Browsername){
 	
 	if(Browsername.equalsIgnoreCase("Chrome")) {
 	WebDriverManager.chromedriver().setup();
-	WebDriver driver=new ChromeDriver();
+    driver=new ChromeDriver();
 	driver.get("http://www.pepperfry.com/,");}
 	
     if(Browsername.equalsIgnoreCase("Firefox")) {
 		WebDriverManager.firefoxdriver().setup();
-		WebDriver driver=new FirefoxDriver();
+	    driver=new FirefoxDriver();
 		driver.get("http://www.pepperfry.com/,");
 }
 
    else if(Browsername.equalsIgnoreCase("Edgedriver")) {
 		WebDriverManager.edgedriver().setup();
-		WebDriver driver=new EdgeDriver();
+	    driver=new EdgeDriver();
 		driver.get("http://www.pepperfry.com/,");
    }
 
